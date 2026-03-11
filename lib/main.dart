@@ -170,9 +170,9 @@ class _MainWrapperState extends State<MainWrapper> {
         currentIndex: _currentIndex,
         onTap: (i) => setState(() => _currentIndex = i),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.grid_view_rounded), label: "Games"),
+          BottomNavigationBarItem(icon: Icon(Icons.grid_view_rounded), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings_rounded), label: "Settings"),
         ],
       ),
     );
@@ -638,7 +638,7 @@ class _SettingPageState extends State<SettingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("MY PROFILE", style: TextStyle(fontWeight: FontWeight.bold)),
+        title: const Text("SETTINGS & PROFILE", style: TextStyle(fontWeight: FontWeight.bold)),
         backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
